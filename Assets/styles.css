@@ -47,7 +47,16 @@ a{
     background-color: #ffffff99;
     padding: 1rem 2rem;
     border-radius: 12px;
-    border: solid 2px#b1b1b1;
+}
+
+.glass__container{
+    background-color: #ffffff00;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
 }
 
 .nav__menu ul{
@@ -83,9 +92,13 @@ a{
 } */
 
 .nav__menu ul li a{
-    color: rgb(139, 139, 139);
+    color: #8b8b8b;
     font-weight: 500;
     transition: all .5s ease;
+}
+
+.nav__center .fa-solid{
+    font-size: 16px;
 }
 
 .nav__menu ul li a:hover{
@@ -95,6 +108,7 @@ a{
 .nav__menu ul li:first-child{
     border-radius: 900px;
 }
+
 
 .btn{
     padding: .5rem 1.7rem;
@@ -204,16 +218,16 @@ header{
 
 .container__lentes{
     position: relative;
+    padding: 2rem 5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    height: 60vh;
+    height: 95vh;
 }
 
 .content__lentes{
     margin-left: 18%;
-    margin-bottom: 30%;
     position: relative;
 }
 
@@ -237,7 +251,7 @@ header{
 .content__lentes p{
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     max-width: 550px;
     margin-bottom: 2rem;
 }
@@ -246,30 +260,60 @@ header{
 /*Modulos*/
 
 .modulos__lentes{
+    height: 500px;
+    margin-right: 18%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.modulo1{
-    width: 100px;
-    height: 100px;
+.modulo__lente{
+    width: 340px;
+    height: 240px;
     background-color: black;
+    border-radius: 12px;
 }
 
-.modulo2{
-    width: 100px;
-    height: 100px;
-    background-color: black;
+
+/*Carac*/
+
+.container__carac{
+    position: relative;
+    padding: 2rem 5rem;
+    align-items: center;
+    height: 95vh;
 }
 
-.modulo3{
-    width: 100px;
-    height: 100px;
-    background-color: black;
+.content__carac{
+    margin: auto;
+    justify-items: center;
+    position: relative;
 }
 
-.modulo4{
-    width: 100px;
-    height: 100px;
+.content__carac h4{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.content__carac h3{
+    font-size: 60px;
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 25px;
+    max-width: 550px;
+    margin-bottom: 2rem;
+}
+
+.modulos__carac{
+    display: flex;
+}
+
+.modulo__carac{
+    width: 340px;
+    height: 240px;
     background-color: black;
+    border-radius: 12px;
 }
